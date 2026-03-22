@@ -4,31 +4,43 @@ services:
     environment:
       POSTGRES_DB: flowfi
       POSTGRES_USER: flowfi
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: flowfi_dev_password
     ports:
-      - "5433:5432"
+      - "5432:5432"          # Fixed: back to standard port 5432
     volumes:
       - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U flowfi -d flowfi"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   redis:
     image: redis:7-alpine
     ports:
       - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   api:
     build: .
     ports:
       - "3000:8080"
     environment:
-      ConnectionStrings__Database: "Host=postgres;Database=flowfi;Username=postgres;Password=postgres"
+      ConnectionStrings__Database: "Host=postgres;Database=flowfi;Username=flowfi;Password=flowfi_dev_password"
       Jwt__Secret: "dev-secret-min-32-chars-long-here!!"
       Jwt__Issuer: "flowfi-api"
       Jwt__Audience: "flowfi-app"
       Redis__ConnectionString: "redis:6379"
       ASPNETCORE_ENVIRONMENT: Development
     depends_on:
-      - postgres
-      - redis
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
 
 volumes:
   pgdata:
