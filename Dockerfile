@@ -3,6 +3,7 @@ RUN apt-get update && apt-get install -y curl --no-install-recommends && rm -rf 
 WORKDIR /app
 EXPOSE 8080
 
+
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 COPY ["src/FlowFi.API/FlowFi.API.csproj", "src/FlowFi.API/"]
