@@ -22,7 +22,8 @@ public record CreateTransactionCommand(
 public record TransactionDto(
     Guid Id, Guid UserId, decimal Amount, string Type,
     string? Description, string? Note, Guid? CategoryId,
-    CategoryDto? Category, DateTime OccurredAt, DateTime CreatedAt
+    CategoryDto? Category, DateTime OccurredAt, DateTime CreatedAt,
+    bool IsNew = true
 );
 
 public record CategoryDto(Guid Id, string Name, string? Icon, string? Color);
@@ -45,7 +46,7 @@ public class CreateTransactionCommandHandler
                 .Include(t => t.Category)
                 .FirstOrDefaultAsync(t => t.IdempotencyKey == request.IdempotencyKey, ct);
 
-            if (existing is not null) return Result<TransactionDto>.Success(MapToDto(existing));
+            if (existing is not null) return Result<TransactionDto>.Success(MapToDto(existing) with { IsNew = false });
         }
 
         var tx = Transaction.Create(

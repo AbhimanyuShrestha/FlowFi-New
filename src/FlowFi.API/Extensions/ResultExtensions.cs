@@ -26,6 +26,20 @@ public static class ResultExtensions
             ? controller.Created(location ?? string.Empty, new { success = true, data = result.Value })
             : result.ToActionResult(controller);
 
+    public static IActionResult ToActionResult(this Result result, ControllerBase controller) =>
+        result.IsSuccess
+            ? controller.NoContent()
+            : result.ErrorCode switch
+            {
+                "NOT_FOUND"      => controller.NotFound(ToError(result)),
+                "UNAUTHORIZED"   => controller.Unauthorized(ToError(result)),
+                "FORBIDDEN"      => controller.StatusCode(403, ToError(result)),
+                _                => controller.StatusCode(500, ToError(result)),
+            };
+
     private static object ToError<T>(Result<T> r) =>
+        new { success = false, error = new { code = r.ErrorCode, message = r.Error } };
+
+    private static object ToError(Result r) =>
         new { success = false, error = new { code = r.ErrorCode, message = r.Error } };
 }
