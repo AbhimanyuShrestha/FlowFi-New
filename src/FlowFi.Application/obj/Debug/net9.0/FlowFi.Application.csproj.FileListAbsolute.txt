@@ -1,0 +1,15 @@
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.Application.csproj.AssemblyReference.cache
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.Application.AssemblyInfoInputs.cache
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.Application.AssemblyInfo.cs
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.Application.csproj.CoreCompileInputs.cache
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/bin/Debug/net9.0/FlowFi.Application.deps.json
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/bin/Debug/net9.0/FlowFi.Application.dll
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/bin/Debug/net9.0/FlowFi.Application.pdb
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/bin/Debug/net9.0/FlowFi.Domain.dll
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/bin/Debug/net9.0/FlowFi.Domain.pdb
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.A.7802EC1B.Up2Date
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.Application.dll
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/refint/FlowFi.Application.dll
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.Application.pdb
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/ref/FlowFi.Application.dll

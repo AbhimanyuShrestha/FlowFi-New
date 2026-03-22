@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FlowFi.API/FlowFi.API.csproj" />
+    <Project Path="src/FlowFi.Application/FlowFi.Application.csproj" />
+    <Project Path="src/FlowFi.Domain/FlowFi.Domain.csproj" />
+    <Project Path="src/FlowFi.Infrastructure/FlowFi.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FlowFi.API.Tests/FlowFi.API.Tests.csproj" />
+    <Project Path="tests/FlowFi.Application.Tests/FlowFi.Application.Tests.csproj" />
+    <Project Path="tests/FlowFi.Domain.Tests/FlowFi.Domain.Tests.csproj" />
+  </Folder>
+</Solution>

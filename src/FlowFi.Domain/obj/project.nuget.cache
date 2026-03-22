@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BCkzqcviLbo=",
+  "success": true,
+  "projectFilePath": "/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Domain/FlowFi.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/abhimanyu/.nuget/packages/microsoft.netcore.app.ref/9.0.12/microsoft.netcore.app.ref.9.0.12.nupkg.sha512",
+    "/Users/abhimanyu/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.12/microsoft.aspnetcore.app.ref.9.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
