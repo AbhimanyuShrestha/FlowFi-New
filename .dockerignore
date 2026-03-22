@@ -1,0 +1,25 @@
+# Build output
+**/bin/
+**/obj/
+
+# Git
+.git/
+.gitignore
+
+# IDE & OS
+.vs/
+.vscode/
+**/*.user
+**/.DS_Store
+**/Thumbs.db
+
+# Secrets — NEVER copy these into the image
+.env
+.env.*
+**/appsettings.Development.json
+
+# Test projects — not needed in production image
+tests/
+
+# Docs
+*.md

@@ -1,0 +1,47 @@
+# Build output
+**/bin/
+**/obj/
+**/out/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets — NEVER commit these
+.env
+.env.*
+**/appsettings.Development.json
+**/appsettings.Local.json
+
+# EF Core migrations snapshot — keep migrations, ignore snapshots if generated
+# (remove the line below if you want to commit snapshots)
+# **/Migrations/*ModelSnapshot.cs
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
