@@ -14,7 +14,6 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-
   redis:
     image: redis:7-alpine
     ports:
@@ -24,7 +23,6 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-
   api:
     build: .
     ports:
@@ -41,6 +39,7 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
-
 volumes:
   pgdata:
+```
+
