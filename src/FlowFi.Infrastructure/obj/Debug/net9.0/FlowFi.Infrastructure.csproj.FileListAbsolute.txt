@@ -17,3 +17,4 @@
 /Users/Projects/Private Project/FlowFi-New/src/FlowFi.Infrastructure/obj/Debug/net9.0/FlowFi.Infrastructure.pdb
 /Users/Projects/Private Project/FlowFi-New/src/FlowFi.Infrastructure/obj/Debug/net9.0/FlowFi.Infrastructure.genruntimeconfig.cache
 /Users/Projects/Private Project/FlowFi-New/src/FlowFi.Infrastructure/obj/Debug/net9.0/ref/FlowFi.Infrastructure.dll
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Infrastructure/obj/Debug/net9.0/FlowFi.Infrastructure.sourcelink.json

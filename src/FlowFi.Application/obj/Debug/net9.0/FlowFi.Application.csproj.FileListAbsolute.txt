@@ -13,3 +13,4 @@
 /Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/refint/FlowFi.Application.dll
 /Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.Application.pdb
 /Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/ref/FlowFi.Application.dll
+/Users/Projects/Private Project/FlowFi-New/src/FlowFi.Application/obj/Debug/net9.0/FlowFi.Application.sourcelink.json

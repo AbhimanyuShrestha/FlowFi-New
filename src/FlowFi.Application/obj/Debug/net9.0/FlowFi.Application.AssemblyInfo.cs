@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlowFi.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+961a05b4d765e87859ec3f6fda5048db6e20c873")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlowFi.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlowFi.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
