@@ -6,7 +6,7 @@ services:
       POSTGRES_USER: flowfi
       POSTGRES_PASSWORD: flowfi_dev_password
     ports:
-      - "5432:5432"
+      - "5435:5432"          # Changed to 5435 to avoid conflict with host Postgres on 5432
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -41,5 +41,3 @@ services:
         condition: service_healthy
 volumes:
   pgdata:
-```
-
